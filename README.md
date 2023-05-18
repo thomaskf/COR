@@ -14,7 +14,7 @@ cd cor-x.x
 make
 ```
 
-Then an executable file named *cor* will appear
+Then an executable file named *cor* will appear.
 
 ## Usage
 
@@ -25,3 +25,11 @@ Syntax:
 ```
 
 Please note that the input SAM file has to be sorted.
+
+## Remark
+
+The read is ignored if:
+- the trimmed region is too long (i.e. > 50% of the read length);
+- the mapping quality is too low (i.e. < 20);
+- it is a supplementary alignment; or
+- it is not aligned.
