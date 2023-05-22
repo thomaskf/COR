@@ -5,7 +5,7 @@
 #include <fstream>
 #include <vector>
 
-#define VERSION "c1.0"
+#define VERSION "c1.1"
 
 void showHelpMenu(char** argv) {
     cerr << "COR (Consensus Overrides Reads) aims to reduce the sequencing errors and remove the heterozygous information on the reads in order to reduce the complexity in the subsequent assembly process. COR updates the read sequences, which should be from the same species, according to the consensus of the read alignments against a reference sequence." << endl;

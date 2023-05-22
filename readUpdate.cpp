@@ -59,7 +59,7 @@ void CoverageStat::computeConsensus(int upto_mpos) {
 	}
 	if (consensusUpTo < upToPos) {
 		for (i=consensusUpTo; i<upToPos; i++) {
-			if (sum[i] >= COVER_THRES) {
+			if (i < sum.size() && sum[i] >= COVER_THRES) {
 				p = i*5;
 				max_cov = cov[p];
 				max_nucl = 0;
